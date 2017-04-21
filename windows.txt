@@ -1,2 +1,2 @@
-test in windows
+test in wind
 test in pull
