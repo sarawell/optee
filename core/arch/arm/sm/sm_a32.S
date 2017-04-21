@@ -159,7 +159,7 @@ UNWIND(	.cantunwind)
 	/* Update SCR */
 	read_scr r0
 	orr	r0, r0, #(SCR_NS | SCR_FIQ) /* Set NS and FIQ bit in SCR */
-	write_scr r0
+	write_scr r0  //have no execute
 
 	add	sp, sp, #(SM_CTX_NSEC + SM_NSEC_CTX_R0)
 	b	.sm_exit
